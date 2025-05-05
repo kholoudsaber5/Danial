@@ -1,0 +1,408 @@
+:root {
+    font-size: 15px;
+}
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+.navbar {
+    background-color: transparent;
+}
+.navbar-brand {
+    font-weight: bolder;
+    color: #ffffff;
+}
+.navbar-nav .nav-link {
+    color: #ffffff;
+    font-size: 1rem; 
+ }
+ .navbar-nav .nav-link.active {
+    color: #ffffff;
+    text-decoration: underline;
+ }
+
+.home {
+    background-image: url(bg.jpg);
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+}
+
+.home .overlay {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.social-icon span i {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    color: aliceblue;
+    ;
+    text-align: center;
+    text-decoration: none;
+}
+
+
+.content h1 {
+    position: relative;
+}
+
+.content h1::after {
+    content: "";
+    position: absolute;
+    animation: type 5s infinite;
+}
+
+@keyframes type {
+    0% {
+        content: "";
+    }
+
+    5% {
+        content: "I AM LA";
+    }
+
+    10% {
+        content: "I AM Larr";
+    }
+
+    15% {
+        content: "I AM Larry";
+    }
+
+    20% {
+        content: "I AM Larry D";
+    }
+
+    25% {
+        content: "I AM Larry Dan";
+    }
+
+    30% {
+        content: "I AM Larry Danie";
+    }
+
+    35% {
+        content: "I AM Larry Daniels";
+    }
+
+    40% {
+        content: "I AM Larry Daniels";
+    }
+
+    45% {
+        content: "I AM";
+    }
+
+    50% {
+        content: "I AM D";
+    }
+
+    55% {
+        content: "I AM De";
+    }
+
+    60% {
+        content: "I AM Dev";
+    }
+
+    65% {
+        content: "I AM Deve";
+    }
+
+    70% {
+        content: "I AM Devel";
+    }
+
+    75% {
+        content: "I AM Develo";
+    }
+
+    80% {
+        content: "I AM Develop";
+    }
+
+    82% {
+        content: "I AM Develope";
+    }
+
+    86% {
+        content: "I AM Developer";
+    }
+
+    90% {
+        content: "I AM";
+    }
+
+    91% {
+        content: "I AM D";
+    }
+
+    92% {
+        content: "I AM De";
+    }
+
+    93% {
+        content: "I AM Des";
+    }
+
+    94% {
+        content: "I AM Desi";
+    }
+
+    95% {
+        content: "I AM Desig";
+    }
+
+    96% {
+        content: "I AM Design";
+    }
+
+    98% {
+        content: "I AM Designe";
+    }
+
+    100% {
+        content: "I AM Designer";
+    }
+
+}
+
+
+
+/* about */
+
+.about-text .progress {
+    margin-bottom: 1rem;
+    height: 24px;
+    box-shadow:  inset 0 0 4px 0 rgba(0, 0, 0, 0.07);
+}
+.progress .progress-bar {
+    padding: 0 12px;
+    border-radius: 4px;
+}
+.about-img {
+    position: relative;
+    padding:  3rem;
+}
+.about-img img {
+    max-height: 500px;
+}
+.about-img:after {
+    content: "";
+    width: 80%;
+    height: 80%;
+    position: absolute;
+    left: 0px;
+    bottom: -20px;
+    background-image: url(dots.png);
+    background-repeat: repeat;
+    z-index: -1;
+}
+.services {
+    background-color: #f7f7f7;
+    ;
+}
+
+.serivce-box {
+    background: #ffffff;
+    box-shadow: 0 2px 8px 4px rgba(0, 0, 0, 0.04);
+    text-align: center;
+    padding: 1.5rem;
+}
+.serivce-box .service-icon {
+    display: flex;
+    width: 56px;
+    height: 56px;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.07);
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1.5rem;
+    border-radius: 50%;
+    transition: all 0.23s;
+}
+ .works .icons {
+    display: flex;
+    width: 56px;
+    height: 56px;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1.5rem;
+    border-radius: 50%;
+ }
+.serivce-box .service-icon:hover {
+    background-color: rgba(0, 0, 0, 1);
+    color: #ffffff;
+}
+
+.works .layer {
+    width: calc(100% - 40px);
+    height: calc(100% - 20px);
+    left: 20px;
+    background-color: whitesmoke;
+    opacity: 0;
+    transition: all 0.24s;
+    transform: translateY(10px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.works .inner-img:hover .layer {
+    opacity: 1;
+}
+.works .inner-img {
+    position: relative;
+}
+.works .inner-img img {
+    transition: 1.1s;
+}
+
+.works .inner-img:hover img {
+    transform: rotate(.5);
+}
+
+
+
+
+/* counter sections */
+.counter-section {
+    padding: 5rem 0;
+}
+.counter-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.counter-icon {
+    font-size: 2rem;
+    width: 44px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+.counter-box .h1 {
+    font-weight: 900;
+}
+
+
+
+/* start testimoinils */
+.testimonials-section {
+    padding: 5rem 0;
+    background-color: #f7f7f7;
+}
+.testimonial-content {
+    text-align: center;
+}
+.testimonial-content img {
+    width: 128px;
+    height: 128px;
+    border-radius: 50%;
+    margin-bottom: 2rem;
+}
+.testimonial-content figcaption p{
+    font-size: 1.2rem;
+    color: #748182;
+}
+.testimonial-content figcaption .auther-data h6 {
+    font-weight: bold;
+    font-size: 1.4rem;
+}
+.testimonial-content figcaption .auther-data span {
+    color: #748182;
+}
+/*start of client section */
+
+
+.Team .card {
+    border-bottom: 3px;
+    position: relative;
+}
+.Team .card figure {
+    position: relative;
+    margin: 0;
+}
+.Team .card .layer {
+    width: 100%;
+    height: 100%;
+    padding: 1rem;
+}
+.Team .card .layer .layer-content {
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.9);
+    transition: 0.5s;
+    transform: rotateY(180deg) scale(0.5, 0.5);
+    opacity: 0;
+  
+}
+.Team .card:hover .layer .layer-content  {
+    transform: rotateY(0) scale(1, 1);
+    opacity: 1;
+}
+.team-social-icons a {
+    display: inline-flex;
+    margin: 0 6px;
+    color: #ffffff;
+    background-color: #000000;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.24s;
+}
+.team-social-icons a:hover {
+    color: #000000;
+    border: 1px solid #000000;
+    background-color: transparent;
+}
+
+
+.Team {
+    background-color: #f7f7f7;
+}
+
+
+.contact-us {
+    padding: 4rem 0;
+}
+
+.contact-us .info .contact-info-col .icon {
+    font-size: 25px;
+    margin-bottom: 15px;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    background: #f4f4f4;
+    border-radius: 50%;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+}
+.contact-form input, .contact-form textarea{
+    background-color: rgba(0, 0, 0, 0.04);
+    border: 1px solid transparent;
+}
+
+span {
+    display: inline-block;
+}
+.footer-copyrights {
+    padding: 2rem 0;
+    color: #f4f4f4;
+    text-align: center;
+    font-size: 0.8rem;
+}
+.footer-copyrights p {
+    margin-bottom: 0;
+}
